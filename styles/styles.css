@@ -89,3 +89,45 @@
   #experiences h2 {
     margin-bottom: 20px; /* Add spacing below the title */
   }
+
+  .navbar {
+    display: flex; /* Aligns items horizontally */
+    justify-content: center; /* Centers the navbar items */
+    gap: 20px; /* Adds space between items */
+    list-style: none; /* Removes bullets */
+    padding: 10px 20px; /* Adds padding around the navbar */
+    margin: 0; /* Removes default margin */
+    background-color: #7a7a7a; /* Dark background color */
+    position: sticky; /* Keeps navbar at the top while scrolling */
+    top: 0; /* Sticky position at the top */
+    z-index: 1000; /* Ensures it appears above other content */
+  }
+  
+  /* Navbar Links */
+  .navbar li a {
+    color: white; /* White text color */
+    text-decoration: none; /* Removes underline */
+    font-size: 1.2rem; /* Increases text size */
+    font-weight: bold; /* Makes text bold */
+    padding: 8px 12px; /* Adds padding around links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover Effect for Links */
+  .navbar li a:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    color: #fff; /* Keeps text white */
+  }
+  
+  /* Responsive Navbar (Optional) */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stacks items vertically on smaller screens */
+      align-items: center; /* Centers items */
+    }
+  }
+
+  * {
+    scroll-behavior: smooth;
+  }
