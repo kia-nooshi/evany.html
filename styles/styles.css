@@ -7,6 +7,10 @@
     border: none; /* No visible border for the box */
     box-shadow: none; /* No shadow to keep it invisible */
   }
+
+  p{
+    font-size: 1.2rem;
+  }
   
   /* Repeatable experience section styling */
   .experience {
